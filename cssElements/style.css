@@ -1,0 +1,42 @@
+* {
+    background-color: yellow;
+    /*This will affect the whole html page*/
+}
+
+h1 {
+    color: blue;
+    /*Type selector*/
+}
+
+.alert-text {
+    color: brown;
+    /*Class selector*/
+}
+
+#title {
+    color: cornflowerblue;
+    /*ID selector*/
+}
+
+/*grouping Selector*/
+/*if two elements have same styles we can group them together*/
+.read,
+.unread {
+    color: white;
+    background-color: black;
+}
+
+/*Chaining Selectors*/
+/*if two or more elements are in the same class that have some unique styles, but we need to apply seperate rules to the each elements*/
+.subsection.header {
+    color: red;
+}
+
+.subsection#preview {
+    color: blue;
+}
+
+/*Descendant Combinator*/
+.ancestors .contents {
+    color: violet;
+}
